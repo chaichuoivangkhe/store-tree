@@ -1,0 +1,56 @@
+.app-download {
+    margin: auto auto;
+    margin-top: 100px;
+    font-size: max(3vw, 20px);
+    text-align: center;
+    font-weight: 500;
+    color: darkgreen;
+}
+
+.app-download-platforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: max(2vw, 10px);
+    margin-top: 40px;
+}
+
+.app-download-platforms img {
+    width: max(20vw, 150px);
+    max-width: 180px;
+    height: auto;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+
+.app-download-platforms img:first-child {
+    width: 8%;
+    height: auto;
+    object-fit: contain;
+    /* Make Google Play logo smaller */
+}
+.app-download-platforms img:hover {
+    transform: scale(1.2); /* This will scale the image up to 120% */
+}
+/* Khi màn hình nhỏ hơn 600px */
+/* Media query for smaller screens */
+@media (max-width: 1050px) {
+    .app-download-platforms img:first-child {
+        width: 15%; /* Đặt kích thước cố định hợp lý cho màn hình nhỏ */
+    }
+}
+@media (max-width: 900px) {
+    
+    .app-download-platforms img:first-child {
+        width: 15%; /* Đặt kích thước cố định hợp lý cho màn hình nhỏ */
+    }
+}
+
+@media (max-width: 750px) {
+    .app-download-platforms img:first-child {
+        width: 20%; /* Đặt kích thước cố định hợp lý cho màn hình nhỏ */
+    }
+
+}
+

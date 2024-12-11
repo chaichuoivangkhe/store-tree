@@ -1,0 +1,86 @@
+.product-item{
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px gray ;
+    transition: 0.3s;
+    animation: fadeIn 1s;
+    padding: 15px;
+}
+.product-item-image{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+.product-item-infor{
+    margin-bottom: 10px;
+
+}
+.product-item-name-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -30px;
+    width: 50%;
+    
+}
+product-item-name-rating p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.product-item-desc{
+    color:darkslategray;
+    font-size: 12px;
+}
+.product-item-price{
+    color: green;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+.product-item-img-container{
+    position: relative;
+}
+.product-item-img-container .add{
+    width: 35px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.product-item-counter{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+}
+/* Nút giảm số lượng */
+.remove {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #ff4c4c; /* Màu đỏ cho nút giảm */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Đảm bảo nút giảm không bị ẩn dưới nút tăng */
+}
+
+/* Nút tăng số lượng */
+.plus {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #28a745; /* Màu xanh cho nút tăng */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Đặt nút tăng phía dưới nút giảm nếu cần */
+}

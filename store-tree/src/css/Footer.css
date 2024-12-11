@@ -1,0 +1,72 @@
+.footer {
+    color: white;
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 8vw;
+    gap: 20px;
+    padding-top: 88px;
+    margin-top: 20px;
+
+}
+
+.footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+}
+
+.footer-content-left, .footer-content-right, .footer-content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content-left li, .footer-content-right li, .footer-content-center li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-content-right h2, .footer-content-center h2 {
+    color: white;
+}
+
+.footer-social-icons {
+    width: 50px;  /* Điều chỉnh chiều rộng icon */
+    height: 50px; /* Điều chỉnh chiều cao icon */
+    margin-left: 10px;
+    object-fit: contain; /* Đảm bảo tỷ lệ của hình ảnh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social-icons img {
+    width:100%;  /* Cập nhật lại để hình ảnh theo chiều rộng của .footer-social */
+    height: 100%; /* Cập nhật lại để hình ảnh theo chiều cao của .footer-social */
+    object-fit: contain;
+   
+}
+
+.footer hr {
+    width: 100%;
+    height: 2px;
+    margin: 20px 0px;
+}
+.footer-content-left img{
+    width: 100px;
+}
+@media (max-width:750px) {
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .footer-coppyright{
+        text-align: center;
+    }
+
+    
+}
