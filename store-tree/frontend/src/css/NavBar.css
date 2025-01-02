@@ -1,0 +1,176 @@
+.navbar {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+    width: 80px;
+    /* Giảm kích thước logo, bạn có thể điều chỉnh số này */
+    height: auto;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: green;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+.navbar-menu li {
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu li:hover {
+    color: darkcyan;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-right img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.navbar-search-icon {
+    position: relative;
+}
+
+.navbar-search-icon .dot {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #f00;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.navbar button {
+    background: transparent;
+    font-size: 14px;
+    color: green;
+    border: 1px solid darkgreen;
+    padding: 8px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: darkcyan;
+    /* Đổi màu chữ khi hover */
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navbar-menu a.active {
+    border-bottom: 3px solid green;
+    /* This adds the green underline */
+    color: green;
+    /* Optional: change the text color */
+
+}
+
+.navbar-profile {
+    position: relative;
+}
+
+.nav-profile-dropdown {
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(101, 209, 101);
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid green;
+    outline: 2px solid white;
+    list-style: none;
+}
+.nav-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.nav-profile-dropdown img{
+    width: 20px;
+}
+.nav-profile-dropdown li:hover{
+    color: rgb(5, 91, 5);
+}
+/* Media query for smaller screens */
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+    }
+
+    .navbar button {
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar .logo {
+        width: 60px;
+    }
+
+    .navbar-menu {
+        gap: 2px;
+        font-size: 12px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+    }
+
+    .navbar button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar-menu {
+        display: none;
+    }
+
+}
