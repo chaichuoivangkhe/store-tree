@@ -4,6 +4,8 @@ import { connectDB } from "./config/db.js"
 import treeRouter from "./routes/treeRoute.js"
 import userRouter from "./routes/usersRoute.js"
 import 'dotenv/config'
+import cartRouter from "./routes/cartRoute.js"
+import orderRouter from "./routes/orderRoute.js"
 
 // app config
 const app = express()
@@ -22,6 +24,8 @@ connectDB();
 app.use('/api/tree', treeRouter); 
 app.use("/images",express.static('uploads'))
 app.use("/api/user",userRouter)
+app.use("/api/cart",cartRouter)
+app.use("/api/order",orderRouter)
 
 app.get("/", (req, res) => {
     res.send("API working")
